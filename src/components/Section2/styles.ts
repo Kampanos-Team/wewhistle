@@ -10,7 +10,7 @@ display: grid;
 grid-template-columns: repeat(3, 1fr); //3 colunas flexiveis de tamanhos iguais
 
 gap: 2rem; //espacamento entre os itens do grid
-background: background: #F5F5F5;
+background:  #F5F5F5;
 margin-top: 10rem;
 
 img{
@@ -19,12 +19,19 @@ img{
   
 }
 
+@media (max-width: 768px) {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
 
 div{
   display: flex;
   align-items: center;
   flex-direction: column;
-  background: background: #F5F5F5;
+  background: #F5F5F5;
   padding: 1.5rem 2rem;
   border-radius: 0.25rem;
  color: var(--text-title);
