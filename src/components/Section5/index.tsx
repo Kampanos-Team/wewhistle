@@ -15,7 +15,7 @@ export function Section5() {
       
      
      <div className="divContent">
-     <img src={section5img} alt="Img" />
+     <img className="divImg" src={section5img} alt="Img" />
 
     
       

@@ -4,6 +4,8 @@ export const Container = styled.div`
 
 background: #FAFAFA;
 
+
+
 div{
   display:flex;
   flex-direction: column;
@@ -100,6 +102,21 @@ border: 0;
 background: #67EE9F;
 border-radius: 15px;
 }
+
+@media (max-width: 768px){
+  
+  img{
+
+    display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  }
+ 
+  
+ }
+
 
 `;
 

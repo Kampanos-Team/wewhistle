@@ -14,7 +14,7 @@ export const Content = styled.div`
 display: flex;
 align-items: center;
 flex-direction: row;
-gap: 6rem; //espacamento entre os itens do grid
+gap: 2rem; //espacamento entre os itens do grid
 
 input{
 
