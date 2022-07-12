@@ -3,6 +3,9 @@ import styled from 'styled-components';
 
 export const Container = styled.header`
 background: #F5F5F5;
+position: fixed;
+  top: 0;
+  width: 100%
 `;
 
 export const Content = styled.div`

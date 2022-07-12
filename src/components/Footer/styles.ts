@@ -3,63 +3,56 @@ import styled from 'styled-components';
 export const Container = styled.footer`
 
 background: #2948A2;
-display: grid;
-grid-template-columns: repeat(4, 1fr); //4 colunas flexiveis de tamanhos iguais
-gap: 1rem; //espacamento entre os itens do grid
+height: 314px;
 margin-top: 10rem;
 `;
 
 export const Content = styled.div`
 
 
-width: 100%;
-max-width: 15rem;
-margin: 0 auto; //centraliza, nao importa o tamanho da tela
-
-padding: 3rem 6rem 1rem;
 
 display: flex;
-align-items: flex-start;
-flex-direction: column;
+align-items: center;
+flex-direction: row;
+gap: 6rem; //espacamento entre os itens do grid
+
+input{
+
+  width: 394px;
+height: 45px;
+
+/* Neutral/50 */
+
+background: #FAFAFA;
+border-radius: 12px;
+}
+
+div{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+}
+
+
 
 a{
 
-  margin-top: 0.8rem;
   font-family: 'Roboto';
 font-style: normal;
 font-weight: 300;
-font-size: 14px;
+font-size: 1rem;
 line-height: 186%;
 /* or 26px */
 
-
-
+padding: 0.2rem;
+/* Neutral/50 */
 
 color: #FAFAFA;
-}
-
-input{
-  padding: 10px 0px 10px 17px;
-  width: 100%;
-  border-radius: 1rem;
-  margin-top: 1rem;
-  background: #FAFAFA;
-}
-
-
-p{
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 22.5px;
-  line-height: 26px;
-  display: flex;
-  align-items: center;
-  
-  /* Secondary/500 */
-  
-  color: #67EE9F;
-  margin-top: 2rem;
 }
 
 `;

@@ -1,9 +1,11 @@
 import { Header } from "./components/Header";
 import { Section1 } from "./components/Section1";
 import { Section2 } from "./components/Section2";
+import { Section3 } from "./components/Section3";
 import { GlobalStyle } from "./styles/Global";
 import styled from "styled-components";
-import { Section3 } from "./components/Section3";
+import { Section4 } from "./components/Section4";
+import { Section5 } from "./components/Section5";
 import { Footer } from "./components/Footer";
 
 const TitleBetweenSections = styled.h1`
@@ -18,24 +20,20 @@ const TitleBetweenSections = styled.h1`
   text-align: center;
   margin-top: 12rem;
   color: #2948a2;
+
+  div{
+    margin-top: 1rem;
+    font-family: 'Fredoka';
+font-style: normal;
+font-weight: 300;
+font-size: 22.5px;
+line-height: 27px;
+text-align: center;
+color:#171812;
+  }
 `;
 
-const PBetweenSections = styled.p`
-  font-family: "Fredoka";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.8rem;
-  margin: 1rem;
 
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  color: #171812;
-  
-`;
 
 export default function App() {
   return (
@@ -43,21 +41,26 @@ export default function App() {
       <Header />
       <Section1 />
 
-      <TitleBetweenSections>Transparent Corporate Culture</TitleBetweenSections>
-      <PBetweenSections>
-        <div>
-        You want to offer your employees and other stakeholders a <strong> safe and
-        anonymous </strong> way to report observed grievances. Your company will benefit
-        directly from this:
+      <TitleBetweenSections>Transparent Corporate Culture
+      <div>
+          You want to offer your employees and other stakeholders a
+          <strong> safe and anonymous </strong> way to report observed
+          grievances. Your company will benefit directly from this:
         </div>
-       
-      </PBetweenSections>
+      </TitleBetweenSections>
+     
+      
+     
       <Section2 />
 
-     
-<Section3/>
- {/*
-<Footer/> */}
+      <Section3 />
+
+      <Section4/>
+
+      <Section5/>
+
+      <Footer/>
+
       <GlobalStyle />
     </>
   );
